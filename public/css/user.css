@@ -9,7 +9,6 @@
 html,
 body {
   height: 100%;
-
 }
 
 header {
@@ -18,7 +17,6 @@ header {
   height: 250px;
   width: 100%;
   pointer-events: none;
-
 }
 
 header .title {
@@ -31,61 +29,55 @@ header .title {
   margin-top: -50px;
   transition: .3s all ease;
   z-index: 999;
-  font-family: sans-serif;
-  font-weight:  900;
+  font-weight: 900;
   text-transform: capitalize;
-    text-shadow: 0px 0px 20px black;
-  font-family: 'Orbitron', cursive;
+  text-shadow: 0 0 2px white,
+              0 0 20px black;
+  font-family: 'Orbitron';
 }
 
 header .header-bg {
   box-shadow: 0 4px 15px 0.1px black;
- background:url(/img/wallpaper.jpg),linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
- background-blend-mode: luminosity;
- background-repeat: no-repeat;
- background-size: cover;
+  background: url(/img/wallpaper.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-size: auto;
   transition: .3s all ease;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-	margin-top: -200px;
+  margin-top: -200px;
   display: block;
- background-size: auto;
 }
 
 header.active .title {
   font-size: 20px;
   transform: translate(-30px, -85px);
   transition: .3s all ease .15s;
-	margin-top: -30px;
-
+  margin-top: -30px;
 }
 
 header.active .header-bg {
   transform: translateY(-170px);
-	/* background: #0F2027;  /* fallback for old browsers */ */
-	/* background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */ */
-	/* background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
-  background:url(/img/wallpaper.jpg),linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background: url(/img/wallpaper.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
-  background-size: cover;
   transition: .3s all ease .3s;
-  	margin-top: -200px;
+  margin-top: -200px;
   display: block;
- background-size: auto;
+  background-size: auto;
 }
 
 header.active .cta-ctr {
-	transform: translateY(-170px);
-		transition: .8s all ease;
+  transform: translateY(-170px);
+  transition: .8s all ease;
 }
 
 header.active .cta:after {
-	transform: translateY(-170px);
-	transition: .6s all ease;
+  transform: translateY(-170px);
+  transition: .6s all ease;
 }
 
 header .cta-ctr {
@@ -99,19 +91,17 @@ header .cta-ctr {
 header .cta {
   width: 70px;
   height: 30px;
-	background: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;
   box-shadow: 0px 0px 5px 1px black;
   border-radius: 1.5rem;
   cursor: pointer;
   transition: .3s all ease;
   pointer-events: auto;
   position: relative;
-
 }
 
-
 header.active .cta {
-	transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 header .cta:after {
@@ -127,99 +117,110 @@ header .cta:after {
 }
 
 header.active .cta-ctr2 {
-	transform: translateY(-170px);
-		transition: .5s all ease;
-		right: 140px;
+  transform: translateY(-170px);
+  transition: .5s all ease;
+  right: 140px;
 }
 
 header.active .cta2:after {
-	transform: translateY(-170px);
-	transition: .7s all ease;
+  transform: translateY(-170px);
+  transition: .7s all ease;
 }
 
 header .cta-ctr2 {
   position: absolute;
-	top: 235px;
-	left: 45px;
+  top: 235px;
+  left: 45px;
   bottom: 0;
   transform-origin: bottom center;
   transition: .2s all ease;
-
 }
 
 header .cta2 {
   width: 200px;
   height: 30px;
-	background: #D3CCE3;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	box-shadow: 0px 0px 5px  black;
+  background: #D3CCE3;
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  box-shadow: 0px 0px 5px 1px #222;
   border-radius: 2rem;
   transition: .3s all ease;
   position: relative;
 }
 
 header.active .cta-ctr3 {
-	transform: translateY(-170px);
-		transition: .5s all ease;
-		right: 85px;
+  transform: translateY(-170px);
+  transition: .5s all ease;
+  right: 85px;
 }
 
 header.active .cta3:after {
-	transform: translateY(-170px);
-	transition: .6s all ease;
-
+  transform: translateY(-170px);
+  transition: .6s all ease;
 }
 
 header .cta-ctr3 {
   position: absolute;
   top: 235px;
-  left: 335px;
+  left: 300px;
   bottom: 0;
   transform-origin: bottom center;
   transition: .6s all ease;
+
 }
 
 header .cta3 {
   width: 30px;
   height: 30px;
-	background: white;  /* fallback for old browsers */
-	box-shadow: 0px 0px 5px black;
+  background: white;
+  box-shadow: 0px 0px 2px 2px #222;
   border-radius: 50%;
   transition: .3s all ease;
   position: relative;
-  padding-left: 7px;
-  padding-top: 5px;
+  padding-left: 4px;
+  padding-top: 6px;
+  background: url(/img/wallpaper.jpg), linear-gradient(to bottom, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lead {
+  text-shadow: 0px 0px 2px  white;
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+
 }
 
 .content-ctr {
   display: block;
- background-size: auto;
- height: 100%;
- width: 100%;
- background:
- linear-gradient(white 100%, white 100%),
- linear-gradient(to right, transparent 0%, transparent 100%),
-   url('/img/bwallpaper.jpg') 0px,
-   url('/img/bwallpaper.jpg') 0px;
-background-blend-mode: color, difference, luminosity;
- background-repeat: no-repeat;
-
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  background:
+    linear-gradient(white 100%, white 100%),
+    linear-gradient(to right, transparent 0%, transparent 100%),
+    url('/img/bwallpaper.jpg') 0px,
+    url('/img/bwallpaper.jpg') 0px;
+  background-blend-mode: color, difference, luminosity;
+  background-repeat: no-repeat;
+  transition: .3s all ease;
 }
 
 .content-ctr.active {
   display: block;
- background-size: auto;
- height: 100%;
- width: 100%;
- background:
- linear-gradient(white 100%, white 100%),
- linear-gradient(to right, transparent 0%, transparent 100%),
-   url('/img/bwallpaper.jpg') 0px,
-   url('/img/bwallpaper.jpg') 0px;
-background-blend-mode: color, difference, luminosity;
- background-repeat: no-repeat;
-
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background:
+    linear-gradient(white 100%, white 100%),
+    linear-gradient(to right, transparent 0%, transparent 100%),
+    url('/img/bwallpaper.jpg') 0px -200px,
+    url('/img/bwallpaper.jpg') 0px;
+  background-blend-mode: color, difference, luminosity;
+  background-repeat: no-repeat;
+transition: .3s all ease .3s;
 }
 
 .content-ctr.active .header-content-ctr {
@@ -228,7 +229,7 @@ background-blend-mode: color, difference, luminosity;
 }
 
 .content-ctr.active .header-content-ctr .title {
-  transition: .3s all  .3s;
+  transition: .3s all .3s;
   opacity: 0;
   transform: translateY(-20px);
 }
@@ -242,7 +243,7 @@ background-blend-mode: color, difference, luminosity;
 .content-ctr.active .main-content-ctr {
   height: 100%;
   overflow: scroll;
-    max-height: 100%;
+  max-height: 100%;
 }
 
 .content-ctr.active .main-content-ctr .title {
@@ -278,7 +279,6 @@ background-blend-mode: color, difference, luminosity;
   height: 100%;
   overflow: hidden;
   transition: .3s ease;
-
 }
 
 .content-ctr .header-content-ctr .title {
@@ -294,8 +294,7 @@ background-blend-mode: color, difference, luminosity;
   right: 0;
   bottom: 110px;
   left: 80px;
-	top:320px;
-
+  top: 320px;
 }
 
 .content-ctr .main-content-ctr {
@@ -317,7 +316,7 @@ background-blend-mode: color, difference, luminosity;
 }
 
 .content-ctr .main-content {
-	position: relative;
+  position: relative;
   top: 30%;
   right: 0;
   left: 0;
@@ -326,29 +325,28 @@ background-blend-mode: color, difference, luminosity;
 }
 
 .rotate-back {
-	position: relative;
-transform: rotate(360deg);
-	margin-left: 10px;
-	padding-top: 5px;
-	font-weight: 900;
-	color: #0F2027;
-		font-size: 13px;
-
+  position: relative;
+  transform: rotate(360deg);
+  margin-left: 10px;
+  padding-top: 6px;
+  font-weight: 900;
+  color: #0F2027;
+  font-size: 13px;
+  text-shadow: 0px 0px 1px black;
 }
 
 .active .rotate-back {
-	position: relative;
-	transform: rotate(0deg);
-	margin-left: 10px;
-	padding-top: 5px;
-	font-weight: 900;
-	color: #0F2027;
-	font-size: 13px;
-
+  position: relative;
+  transform: rotate(0deg);
+  margin-left: 10px;
+  padding-top: 6px;
+  font-weight: 900;
+  color: #0F2027;
+  font-size: 13px;
 }
 
 .rotate-back2 {
-	position: absolute;
+  position: absolute;
   top: 25px;
   left: 30px;
   color: #0F2027;
@@ -358,7 +356,7 @@ transform: rotate(360deg);
   z-index: 999;
   font-family: sans-serif;
   font-weight: 900;
-	font-size: 15px;
+  font-size: 15px;
 }
 
 .active .rotate-back2 {
@@ -368,38 +366,37 @@ transform: rotate(360deg);
   z-index: 999;
   font-family: sans-serif;
   font-weight: 900;
-	font-size: 15px;
+  font-size: 15px;
   text-transform: capitalize;
-	margin-top: -30px;
-
+  margin-top: -30px;
 }
 
 .container {
-	width: 250px;
-	margin: 0;
-	margin-left: -50px;
+  width: 250px;
+  margin: 0;
+  margin-left: -50px;
 }
 
 .ui.button {
-	border-radius: 5.5rem;
-  background:url(/img/wallpaper.jpg),linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  border-radius: 5.5rem;
+  background: url(/img/wallpaper.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
-	color: white;
-	width: 200px;
+  color: white;
+  width: 200px;
   box-shadow: 0px 0px 1px 1px black;
 }
 
 .ui.form input[type=text], .ui.form input[type=password], .ui.form input[type=email] {
-	border-radius: 1.5rem;
-	width: 200px;
+  border-radius: 1.5rem;
+  width: 200px;
   box-shadow: 0px 0px 1px 1px black;
 }
 
-.ui.button:hover{
-  background-image:url(/img/wallpaper.jpg);
-  background-color: rgba(255,255,255,1);
+.ui.button:hover {
+  background-image: url(/img/wallpaper.jpg);
+  background-color: rgba(255, 255, 255, 1);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,10 +411,9 @@ transform: rotate(360deg);
   box-shadow: 0px 0px 1px 1px black;
 }
 
-
 .field {
-	border-radius: 1.5rem;
-	width: 200px;
+  border-radius: 1.5rem;
+  width: 200px;
 }
 
 .auth {
@@ -431,18 +427,16 @@ transform: rotate(360deg);
 .btn-social {
   margin: 10px 0;
   border-radius: 1.5rem;
-  background:url(/img/wallpaper.jpg);
+  background: url(/img/wallpaper.jpg);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-
-.tooltip2  .tooltiptext2 {
+.tooltip2 .tooltiptext2 {
   visibility: hidden;
-  width: 120px;
-  background-color: rgba(255,255,255,0.9) ;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
   text-align: center;
   padding: 5px 0;
@@ -451,17 +445,15 @@ transform: rotate(360deg);
   margin-left: -20px;
   position: absolute;
   border: 1px solid black;
-
 }
 
-.tooltip2:hover  .tooltiptext2 {
+.tooltip2:hover .tooltiptext2 {
   visibility: visible;
 }
 
 .btn-block:hover {
-
   border-radius: 1.5rem;
-  background:url(/img/wallpaper.jpg);
+  background: url(/img/wallpaper.jpg);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;

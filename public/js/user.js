@@ -1,33 +1,18 @@
-
-  var button = document.querySelector(".cta");
-  var contentCtr = document.querySelector(".content-ctr");
-
-  button.addEventListener("click", function() {
-    var header;
-    header = this.parentElement.parentElement;
-    header.classList.toggle("active");
-    var name = document.querySelector(".signup").textContent;
-
+$(document).ready(function () {
+  $(".cta").click(function() {
+    $(this).parents().toggleClass("active");
+    var name = $(".sign-up").text();
     if(name === "SIGN-UP"){
-      document.querySelector(".signup").textContent = "SIGN-IN";
-      document.querySelector(".cc").textContent = "SIGN-UP ...";
-
-      document.getElementById("ccc").classList.remove("sign-in");
-      document.getElementById("ccc").classList.add("user", "plus");
-
-      document.getElementById("cccc").classList.remove("user", "plus");
-      document.getElementById("cccc").classList.add("sign-in");
-
-
+      name = $(".sign-up").text("SIGN-IN");
+      $(".cc").text("SIGN-UP ...");
+      $("#ccc").removeClass("sign-in");
+      $("#ccc").addClass("signup");
     } else {
-      document.querySelector(".signup").textContent = "SIGN-UP";
-      document.querySelector(".cc").textContent = "SIGN-IN ...";
-
-      document.getElementById("ccc").classList.remove("user", "plus");
-      document.getElementById("ccc").classList.add("sign-in");
-
-      document.getElementById("cccc").classList.remove("sign-in");
-      document.getElementById("cccc").classList.add("user", "plus");
+      name = $(".sign-up").text("SIGN-UP");
+      $(".cc").text("SIGN-IN ...");
+      $("#ccc").removeClass("signup");
+      $("#ccc").addClass("sign-in");
     }
-    return contentCtr.classList.toggle("active");
+    return $(".content-ctr").toggleClass("active");
   });
+});

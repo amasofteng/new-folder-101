@@ -4,7 +4,11 @@ const passport = require("passport");
 
 const User = require("../models/user");
 
-router.get("/", isLoggedIn, function(req, res) {
+router.get("/", function(req, res) {
+    res.render("sample");
+});
+
+router.get("/index", function(req, res) {
     res.render("index");
 });
 
