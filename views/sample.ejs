@@ -1,73 +1,108 @@
 <% include partials/header %>
 
 <div class="wrapper">
-
+  <!-- sidebar content -->
   <nav class="ui" id="sidebar">
     <div class="sidebar-header">
-
     </div>
-    <div class="ui accordion ml-3 mt-5">
-      <div class="title" id="head">
-        <a href="#">
-          <i class="angle right icon"></i>
-          <i class="large folder icon"></i>
-          <span>News Feed</span>
-        </a>
-      </div>
-      <div class="content p-0 ml-3">
-        <div class="accordion m-0">
-          <div class="title">
+    <!-- main ul -->
+    <div class="ul">
+      <div class="ui accordion ml-3 mt-5">
+        <!-- 1st li -->
+        <div class="li">
+          <div class="title head" id="1st">
             <a href="#">
               <i class="angle right icon"></i>
               <i class="large folder icon"></i>
-              Posts
+              <span>News Feed</span>
             </a>
           </div>
-          <div class="content ml-5">
-            <a href="#">
-              <i class="large file icon"></i>
-              Comments
-            </a>
-          </div>
-          <div class="accordion m-0">
-          <div class="title">
-            <a href="#">
-              <i class="angle right icon"></i>
-              <i class="large folder icon"></i>
-              Friends
-            </a>
-          </div>
-          <div class="content ml-5">
-            <a href="#">
-              <i class="large file icon"></i>
-              Messages
-            </a>
+          <div class="content p-0 ml-3">
+            <!-- main 1st ul > li  -->
+            <div class="ul">
+              <!-- inside 1st accordion -->
+              <div class="accordion m-0">
+                <!-- 1st ul > li > ul -->
+                <div class="li">
+                  <div class="title">
+                    <a href="#">
+                      <i class="angle right icon"></i>
+                      <i class="large folder icon"></i>
+                      Posts
+                    </a>
+                  </div>
+                  <div class="content ml-5 transition hidden">
+                    <div class="ul">
+                      <div class="li">
+                        <a href="#">
+                          <i class="large file icon"></i>
+                          Comments
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- inside 2nd accordion -->
+              <div class="accordion m-0">
+                <!-- 1st ul > li > ul -->
+                <div class="li">
+                  <div class="title">
+                    <a href="#">
+                      <i class="angle right icon"></i>
+                      <i class="large folder icon"></i>
+                      Friends
+                    </a>
+                  </div>
+                  <div class="content ml-5 transition hidden">
+                    <!-- 1st ul > li > ul > li -->
+                    <div class="ul">
+                      <!-- 1st ul > li > ul > li > ul-->
+                      <div class="li">
+                        <a href="#">
+                          <i class="large file icon"></i>
+                          Messages
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
-
-      <div class="title" id="head2">
-        <a href="#">
-          <i class="angle right icon"></i>
-          <i class="large folder icon"></i>
-          dist
-        </a>
-      </div>
-      <div class="content p-0 ml-4">
-        <div class="accordion m-0">
-          <div class="title">
+        <div class="li">
+          <div class="title head" id="2nd">
             <a href="#">
               <i class="angle right icon"></i>
               <i class="large folder icon"></i>
-              themes
+              dist
             </a>
           </div>
-          <div class="content ml-5">
-            <a href="#">
-              <i class="large file icon"></i>
-              theme.config
-            </a>
+          <div class="content p-0 ml-4">
+            <div class="ul">
+              <div class="accordion m-0">
+                <div class="li">
+                  <div class="title">
+                    <a href="#">
+                      <i class="angle right icon"></i>
+                      <i class="large folder icon"></i>
+                      themes
+                    </a>
+                  </div>
+                  <div class="content ml-5 transition hidden">
+                    <div class="ul">
+                      <div class="li">
+                        <a href="#">
+                          <i class="large file icon"></i>
+                          theme.config
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -81,6 +116,10 @@
           <i class="fas fa-align-left"></i>
           <span></span>
         </button>
+
+        <div class="ui small breadcrumb" id="location1">
+        </div>
+
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-align-justify"></i>
         </button>
