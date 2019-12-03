@@ -1,11 +1,6 @@
-::-webkit-scrollbar {
-  display: none;
-}
-
-::-moz-scrollbar {
-  display: none;
-}
-
+bg4/* ---------------------------------------------------
+    ELEMENTS
+----------------------------------------------------- */
 html,
 body {
   height: 100%;
@@ -19,6 +14,9 @@ header {
   pointer-events: none;
 }
 
+/* ---------------------------------------------------
+    ELEMENTS.CLASS
+----------------------------------------------------- */
 header .title {
   position: absolute;
   top: 50%;
@@ -32,13 +30,13 @@ header .title {
   font-weight: 900;
   text-transform: capitalize;
   text-shadow: 0 0 2px white,
-              0 0 20px black;
+    0 0 20px black;
   font-family: 'Orbitron';
 }
 
 header .header-bg {
   box-shadow: 0 4px 15px 0.1px black;
-  background: url(/img/wallpaper.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background: url(/img/bg4.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: auto;
@@ -61,7 +59,7 @@ header.active .title {
 
 header.active .header-bg {
   transform: translateY(-170px);
-  background: url(/img/wallpaper.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background: url(/img/bg4.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   transition: .3s all ease .3s;
@@ -166,7 +164,6 @@ header .cta-ctr3 {
   bottom: 0;
   transform-origin: bottom center;
   transition: .6s all ease;
-
 }
 
 header .cta3 {
@@ -179,18 +176,28 @@ header .cta3 {
   position: relative;
   padding-left: 4px;
   padding-top: 6px;
-  background: url(/img/wallpaper.jpg), linear-gradient(to bottom, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background: url(/img/bg4.jpg), linear-gradient(to bottom, #2C5364 10%, #203A43 40%, #0F2027 50%);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* ---------------------------------------------------
+    CLASSES
+----------------------------------------------------- */
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-scrollbar {
+  display: none;
+}
+
 .lead {
-  text-shadow: 0px 0px 2px  white;
+  text-shadow: 0px 0px 2px white;
   color: white;
   font-weight: 900;
   font-size: 15px;
-
 }
 
 .content-ctr {
@@ -220,7 +227,7 @@ header .cta3 {
     url('/img/bwallpaper.jpg') 0px;
   background-blend-mode: color, difference, luminosity;
   background-repeat: no-repeat;
-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
 }
 
 .content-ctr.active .header-content-ctr {
@@ -379,7 +386,7 @@ transition: .3s all ease .3s;
 
 .ui.button {
   border-radius: 5.5rem;
-  background: url(/img/wallpaper.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
+  background: url(/img/bg4.jpg), linear-gradient(to top, #2C5364 10%, #203A43 40%, #0F2027 50%);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,7 +402,7 @@ transition: .3s all ease .3s;
 }
 
 .ui.button:hover {
-  background-image: url(/img/wallpaper.jpg);
+  background-image: url(/img/bg4.jpg);
   background-color: rgba(255, 255, 255, 1);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
@@ -427,10 +434,10 @@ transition: .3s all ease .3s;
 .btn-social {
   margin: 10px 0;
   border-radius: 1.5rem;
-  background: url(/img/wallpaper.jpg);
+  background: url(/img/bg3.jpg);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .tooltip2 .tooltiptext2 {
@@ -453,7 +460,7 @@ transition: .3s all ease .3s;
 
 .btn-block:hover {
   border-radius: 1.5rem;
-  background: url(/img/wallpaper.jpg);
+  background: url(/img/bg4.jpg);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
