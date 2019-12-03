@@ -55,7 +55,7 @@ $(document).ready(function () {
   $('.ui.accordion a').on('click', function() {
     var $this = $(this);
     var $bc = $('<div></div>');
-    $this.parents('li').each(function(n, li) {
+    $this.parents('div.li').each(function(n, li) {
       var $a = $(li).children('div').children('a').clone();
       $bc.prepend($a);
     });
