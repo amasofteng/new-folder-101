@@ -57,9 +57,24 @@ $(document).ready(function () {
     var $bc = $('<div></div>');
     $this.parents('div.li').each(function(n, li) {
       var $a = $(li).children('div').children('a').clone();
+      var $b = $(li).children('a').clone();
       $bc.prepend($a);
+      $bc.prepend($b);
     });
     $('#location1').html($bc.prepend(''));
+  });
+
+  // sidebar folder to sub nav breadcrumb
+  $('.ui.accordion a').on('click', function() {
+    var $this = $(this);
+    var $bc = $('<div></div>');
+    $this.parents('div.li').each(function(n, li) {
+      var $a = $(li).children('div').children('a').clone();
+      var $b = $(li).children('a').clone();
+      $bc.prepend($a);
+      $bc.prepend($b);
+    });
+    $('#location2').html($bc.prepend(''));
   });
 
 });
